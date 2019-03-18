@@ -1,0 +1,55 @@
+.navbar{
+    border-bottom: 1px solid #e5e9f2;
+    background-color: #fff;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+}
+/* Sidebar toogle button */
+.sidebar-toggle{
+    display: flex;
+    cursor: pointer;
+    width: 26px;
+    height: 26px;
+}
+/* humburger */
+.sidebar-toggle:hover .humburger,
+.sidebar-toggle:hover .humburger:before,
+.sidebar-toggle:hover .humburger:after
+{
+    background: #47bac1;
+}
+
+.humburger{
+    background: #495057;
+    width: 24px;
+    height: 3px;
+    align-self: center;
+    position: relative;
+    cursor: pointer;
+}
+.humburger:before{
+    content: '';
+    display: block;
+    width: 16px;
+    height: 3px;
+    background: #495057;
+    position: absolute;  
+    top: -7.5px; 
+}
+.humburger:after{
+    content: '';
+    display: block;
+    width: 16px;
+    height: 3px;
+    background: #495057;
+    position: absolute;  
+    bottom: -7.5px;
+}
+.navbar form input{
+    outline: none;
+    border: none;
+    font-size: .875rem;
+    padding: .25rem .7rem;
+    color:#495057;
+}
